@@ -7,6 +7,8 @@
   --main-color: #db00ff;
   --accent-color: #ff0070;
   --main-text-color: #f1b2ce;
+  --section-title-color: #ff0070;
+  --article-title-color: #000028;
   --nav-color: #ff0070;
   --link-shadow-color: #ff0070;
   --decorated-zone-color: #ff0070;
@@ -16,7 +18,7 @@
   --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --background-color: #00183f;
-  --background-image: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
 }
 
 @media (width >= 768px) {
