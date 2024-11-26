@@ -14,6 +14,7 @@
   --main-text-color: #353430;
   --section-title-color: #353440;
   --article-title-color: #353440;
+  --button-hover-color: rgba(53, 52, 48, 0.4);
   --nav-color: #353430;
   --link-shadow-color: #ff8dcb;
   --decorated-zone-color: #353430;
@@ -25,8 +26,8 @@
   background-image: url(../images/cover-image-light.png);
 }
 
-.theme_light .header__theme-menu-button:hover {
-  border: 1px solid rgba(53, 52, 48, 0.4);
+.theme_light .header__theme-menu-button_active {
+  border: 1px solid var(--nav-color);
 }
 
 .theme_light .header__angle-inscription {
@@ -40,6 +41,7 @@
     --main-text-color: #353430;
     --section-title-color: #353440;
     --article-title-color: #353440;
+    --button-hover-color: rgba(53, 52, 48, 0.4);
     --nav-color: #353430;
     --decorated-zone-color: #353430;
     --section-heading-color: #ff8dcb;
@@ -53,8 +55,12 @@
     background-image: var(--background-image);
   }
 
-  .theme_light .header__theme-menu-button:hover {
+  .header__theme-menu-button:hover {
     border: 1px solid rgba(53, 52, 48, 0.4);
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--nav-color);
   }
   
   .header__angle-inscription {
