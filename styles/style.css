@@ -38,7 +38,7 @@
   background: none;
   border: none;
   color: var(--nav-color);
-  padding: 0 13px;
+  padding: 1.5px 13px;
 }
 
 .header__theme-menu-button:hover {
@@ -59,7 +59,6 @@
   /* стили */
   border-bottom: 1px solid var(--nav-color);
 }
-
 
 .header__title {
   font-size: var(--header-logo-size);
@@ -153,7 +152,7 @@
 
 .main__section_article-title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   max-height: 23px;
   color: var(--article-title-color);
   margin-bottom: 10px;
@@ -200,7 +199,7 @@
 .main__section-gallery_title {
   font-size: 18px;
   font-weight: 700;
-  color: #000;
+  color: var(--section-title-color);
 }
 
 
@@ -238,8 +237,18 @@
     padding: 20px;
   }
 
+  .header__theme-menu-list {
+    margin-top: 172px;
+    margin-bottom: 173px;
+  }
+
+  .header__title {
+    margin-bottom: 162px;
+  }
+
   .header__article {
     max-width: 364px;
+    margin-bottom: 163px;
   }
 
   .main {
@@ -368,11 +377,10 @@
 @media screen and (width >= 1024px) {
 
   .header__theme-menu-list {
-    display: flex;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 273px;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
   }
 
   .header__article {

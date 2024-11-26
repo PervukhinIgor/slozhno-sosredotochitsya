@@ -4,23 +4,6 @@
   переключая тему
 */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --main-color: #ffc2e6;
-    --accent-color: #ff0070;
-    --main-text-color: #353430;
-    --section-title-color: #353440;
-    --article-title-color: #353440;
-    --nav-color: #353430;
-    --decorated-zone-color: #353430;
-    --section-heading-color: #ff8dcb;
-    --header-logo-color: #ff8dcb;
-    --footer-logo-color: #ff8dcb;
-    --background-color: #ffeef6;
-    --background-image: url(../images/cover-image-light.png);
-  }
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -42,11 +25,40 @@
   background-image: url(../images/cover-image-light.png);
 }
 
-.header__theme-menu-button:hover {
+.theme_light .header__theme-menu-button:hover {
   border: 1px solid rgba(53, 52, 48, 0.4);
 }
 
-.header__angle-inscription {
+.theme_light .header__angle-inscription {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: #ffc2e6;
+    --accent-color: #ff0070;
+    --main-text-color: #353430;
+    --section-title-color: #353440;
+    --article-title-color: #353440;
+    --nav-color: #353430;
+    --decorated-zone-color: #353430;
+    --section-heading-color: #ff8dcb;
+    --header-logo-color: #ff8dcb;
+    --footer-logo-color: #ff8dcb;
+    --background-color: #ffeef6;
+    --background-image: url(../images/cover-image-light.png);
+  }
+
+  .page {
+    background-image: var(--background-image);
+  }
+
+  .theme_light .header__theme-menu-button:hover {
+    border: 1px solid rgba(53, 52, 48, 0.4);
+  }
+  
+  .header__angle-inscription {
+    display: none;
+  }
 }
 
