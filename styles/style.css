@@ -392,6 +392,10 @@
     max-width: 315px;
   }
 
+  .advices {
+    margin-bottom: 80px;
+  }
+
   .advices>.main__section-title {
     max-width: 315px;
   }
