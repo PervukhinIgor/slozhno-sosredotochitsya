@@ -346,6 +346,8 @@
   }
 
   .footer {
+    display: flex;
+    flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -354,8 +356,6 @@
     margin-top: 463px;
     margin-bottom: 462px;
   }
-  
-
 }
 
 @media screen and (width >= 1024px) {
