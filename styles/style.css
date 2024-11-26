@@ -134,20 +134,19 @@
 }
 
 .main {
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .main__section-cards {
-  display: grid;
   margin-bottom: 50px;
 }
 
 .main__section-title {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 20px;
   color: var(--section-title-color);
+  margin-bottom: 20px;
 }
 
 .main__section_article-title {
@@ -158,11 +157,15 @@
   margin-bottom: 10px;
 }
 
+.main__section-article-list {
+  display: grid;
+  gap: 20px;
+}
+
 .main__section_article-content {
   font-size: 18px;
   font-weight: 400;
   color: var(--main-text-color);
-  margin-bottom: 20px;
 }
 
 .main__section_content-link {
@@ -186,7 +189,6 @@
   font-size: 18px;
   font-weight: 700;
   color: var(--article-title-color);
-  margin-bottom: 20px;
 }
 
 .main__section-gallery {
@@ -222,7 +224,8 @@
 .footer {
   height: 100vh;
   position: relative;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer__title {
@@ -242,7 +245,8 @@
 
 @media screen and  (width >= 768px) {
   .header {
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-bottom: 60px;
   }
 
@@ -262,8 +266,8 @@
   }
 
   .main {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .decorated-zone::before {
@@ -282,46 +286,37 @@
   }
 
   .main__section-cards {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
     margin-bottom: 80px;
   }
 
   .why {
-    grid-template-columns: fit-content 1fr;
-  }
+    gap: 20px;
+  }  
 
   .why>.main__section-title {
-    grid-column: 1/2;
-    grid-row: 1/-1;
+    margin-bottom: 0;
     max-width: 236px;
-  }
-
-  .why>.main__section-article {
-    grid-column: 2/3;
   }
 
   .causes>.main__section-title {
-    max-width: 236px;
+    grid-column: 1/-1;
   }
 
-  .advices {
-    grid-template-columns: fit-content 1fr;
-    column-gap: 20px;
+  .causes>.main__section-article-list {
+    grid-column: 1/-1;
   }
 
   .advices-title {
     height: 23px;
-    padding-right: 20px;
     text-wrap: nowrap;
+    margin-bottom: 0;
   }
 
-  .advices>.main__section-title {
-    grid-column: 1/2;
-    grid-row: 1/span 2;
-    max-width: 236px;
-  }
-
-  .advices>.main__section-article {
-    grid-column: 2/3;
+  .main__section-gallery {
+    margin-bottom: 60px;
   }
 
   .main__section-gallery_title {
@@ -330,7 +325,8 @@
 
   .main__section-gallery_content {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    gap: 20px;
   }
 
   .sunset {
@@ -338,7 +334,7 @@
   }
 
   .tape {
-    grid-row: span 3;
+    grid-row: span 2;
   }
 
   .ice-cream {
@@ -347,7 +343,11 @@
 
   .street {
     grid-column: span 2;
-    grid-row: span 2;
+  }
+
+  .footer {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .footer__title {
@@ -371,31 +371,29 @@
     max-width: 491px;
   }
 
+  .main__section-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .why>.main__section-title {
     max-width: 315px;
   }
 
-  .causes {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: fit-content 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
+  .main__section-article-list {
+    grid-column: span 2;
+  }
+
+  .causes>.main__section-article-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .causes>.main__section-title {
     max-width: 315px;
-    margin-bottom: 0;
-    grid-column: span 4;
   }
 
   .advices>.main__section-title {
     max-width: 315px;
   }
-
-  .main__section-gallery {
-    grid-template-rows: 23px 1fr 315px 1fr;
-  }
-
   .footer__title {
     margin-top: 319px;
     margin-bottom: 319px;
