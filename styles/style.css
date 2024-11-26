@@ -222,6 +222,8 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   position: relative;
   padding-left: 10px;
@@ -302,6 +304,7 @@
   }
 
   .causes>.main__section-title {
+    max-width: 236px;
     grid-column: 1/-1;
   }
 
@@ -346,8 +349,6 @@
   }
 
   .footer {
-    display: flex;
-    flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -394,6 +395,7 @@
   .advices>.main__section-title {
     max-width: 315px;
   }
+
   .footer__title {
     margin-top: 319px;
     margin-bottom: 319px;
