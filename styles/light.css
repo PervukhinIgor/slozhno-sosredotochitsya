@@ -14,7 +14,7 @@
   --main-text-color: #353430;
   --section-title-color: #353440;
   --article-title-color: #353440;
-  --button-hover-color: rgba(53, 52, 48, 0.4);
+  --button-hover-color: rgba(50, 49, 45, 0.4);
   --nav-color: #353430;
   --link-shadow-color: #ff8dcb;
   --decorated-zone-color: #353430;
@@ -41,12 +41,12 @@
     --main-text-color: #353430;
     --section-title-color: #353440;
     --article-title-color: #353440;
-    --button-hover-color: rgba(53, 52, 48, 0.4);
+    --button-hover-color: rgba(50, 49, 45, 0.4);
     --nav-color: #353430;
     --decorated-zone-color: #353430;
     --section-heading-color: #ff8dcb;
-    --header-logo-color: #ff8dcb;
-    --footer-logo-color: #ff8dcb;
+    --header-logo-color: #ffc2e6;
+    --footer-logo-color: #ffc2e6;
     --background-color: #ffeef6;
     --background-image: url(../images/cover-image-light.png);
   }
@@ -56,7 +56,7 @@
   }
 
   .header__theme-menu-button:hover {
-    border: 1px solid rgba(53, 52, 48, 0.4);
+    outline: 1px solid var(--button-hover-color);
   }
 
   .header__theme-menu-button_active {
