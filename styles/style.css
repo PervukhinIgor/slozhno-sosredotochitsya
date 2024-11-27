@@ -64,12 +64,12 @@
 }
 
 .header__title {
+  margin-bottom: 55px;
   font-size: var(--header-logo-size);
   font-weight: 700;
+  line-height: 96px;
   color: var(--header-logo-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-  line-height: 96px;
-  margin-bottom: 57px;
 }
 
 .header__article {
@@ -165,7 +165,6 @@
 .main__section_article-content {
   font-size: 18px;
   font-weight: 400;
-  line-height: 23px;
   color: var(--main-text-color);
 }
 
@@ -371,16 +370,17 @@
 
   .header__theme-menu-list {
     margin-top: 20px;
-    margin-bottom: 273px;
+    margin-bottom: 293px;
     flex-direction: row;
     justify-content: center;
   }
 
   .header__title {
-    margin-bottom: 114px;
+    margin-bottom: 124px;
   }
 
   .header__article {
+    margin-bottom: 154px;
     max-width: 491px;
   }
 
@@ -413,8 +413,8 @@
   }
 
   .footer__title {
-    margin-top: 319px;
-    margin-bottom: 319px;
+    margin-top: 339px;
+    margin-bottom: 339px;
   }
 
 }
