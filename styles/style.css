@@ -20,6 +20,7 @@
   padding-left: 10px;
   padding-right: 10px;
   height: 100vh;
+  min-height: 668px;
   margin-bottom: 40px;
 }
 
@@ -39,13 +40,13 @@
   line-height: 18px;
   text-transform: lowercase;
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
   color: var(--nav-color);
   padding: 2px 13px 4px;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--button-hover-color);
+  outline: 1px solid var(--button-hover-color);
 }
 
 .header__theme-menu-button_active {
@@ -74,6 +75,7 @@
 
 .header__article {
   justify-self: end;
+  align-self: flex-end;
   margin-bottom: 66px;
   font-weight: 700;
   color: var(--article-title-color);
@@ -229,21 +231,21 @@
 .footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
+  min-height: 668px;
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .footer__title {
-  text-align: center;
   font-size: var(--footer-logo-size);
   font-weight: 700;
   color: var(--footer-logo-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 96px;
-  margin-top: 286px;
-  margin-bottom: 285px;
 }
 
 .title-decor {
@@ -359,11 +361,6 @@
     padding-right: 20px;
     padding-left: 20px;
   }
-
-  .footer__title {
-    margin-top: 463px;
-    margin-bottom: 462px;
-  }
 }
 
 @media screen and (width >= 1024px) {
@@ -411,12 +408,6 @@
   .advices>.main__section-title {
     max-width: 315px;
   }
-
-  .footer__title {
-    margin-top: 339px;
-    margin-bottom: 339px;
-  }
-
 }
 
 
