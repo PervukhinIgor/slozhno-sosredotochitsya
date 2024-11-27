@@ -2,8 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: 'IBM Plex mono' , monospace;
+  font-family: 'IBM Plex mono', monospace;
   font-size: 18px;
+  line-height: 23.4px;
   background-color: var(--background-color);
   background-image: var(--background-image);
   background-position: center;
@@ -35,10 +36,12 @@
   font-family: inherit;
   font-size: inherit;
   font-weight: 400;
-  background: none;
+  line-height: 18px;
+  text-transform: lowercase;
+  background: transparent;
   border: none;
   color: var(--nav-color);
-  padding: 1.5px 13px;
+  padding: 2px 13px 4px;
 }
 
 .header__theme-menu-button:hover {
@@ -66,14 +69,13 @@
   color: var(--header-logo-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 96px;
-  margin-bottom: 55px;
+  margin-bottom: 57px;
 }
 
 .header__article {
   justify-self: end;
   margin-bottom: 66px;
   font-weight: 700;
-  line-height: 23px;
   color: var(--article-title-color);
   white-space: pre-line;
 }
@@ -184,8 +186,13 @@
   outline: 1px solid var(--main-text-color);
 }
 
+.advices {
+  & .main__section_article-title {
+    font-weight: 400;
+  }
+}
+
 .advices-title {
-  font-size: 18px;
   font-weight: 700;
   color: var(--article-title-color);
 }
@@ -252,18 +259,19 @@
   }
 
   .header__theme-menu-list {
-    margin-top: 172px;
+    margin-top: 192px;
     margin-bottom: 173px;
   }
 
   .header__title {
+    line-height: 99px;
     margin-inline-start: -20px;
     margin-bottom: 162px;
   }
 
   .header__article {
     max-width: 364px;
-    margin-bottom: 163px;
+    margin-bottom: 183px;
   }
 
   .main {
@@ -366,6 +374,10 @@
     margin-bottom: 273px;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .header__title {
+    margin-bottom: 114px;
   }
 
   .header__article {
